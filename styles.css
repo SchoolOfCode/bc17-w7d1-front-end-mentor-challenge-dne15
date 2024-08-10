@@ -1,0 +1,101 @@
+* {
+  background-color: #f3eae3;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  height: auto;
+  margin: 20rem;
+}
+
+header,
+h1,
+h2,
+p,
+.container,
+button {
+  background-color: white;
+  padding: 0rem;
+}
+
+.imageContainer {
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 30rem;
+  margin: 0;
+}
+
+.imageContainer img {
+  height: auto;
+  width: auto;
+}
+
+.contentContainer {
+  grid-column: 2 / 3; /* Span the second column */
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  width: 30rem;
+  height: auto;
+}
+
+.priceContainer {
+  display: flex;
+  background-color: white;
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 100;
+  padding-bottom: 4rem;
+  letter-spacing: 0.25rem;
+}
+
+h2 {
+  font-weight: 900;
+  letter-spacing: -0.05rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+p {
+  letter-spacing: 0.03rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+.originalPrice {
+  text-decoration: line-through;
+  margin-left: 3rem;
+  background-color: white;
+}
+
+.salePrice {
+  background-color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #3d8168;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #3d8168;
+  color: white;
+  align-self: center;
+  width: 60%;
+  border-radius: 0.5rem;
+  letter-spacing: 0.05rem;
+}
+
+button svg {
+  margin-right: 0.5rem;
+  background-color: #3d8168;
+}
